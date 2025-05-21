@@ -24,8 +24,7 @@ load_dotenv(verbose=True)
 # Check if API key is available
 def get_openai_api_key():
     """Get OpenAI API key from secrets or environment variables"""
-    return "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"
-    """
+    
     api_key = None
     
     # First try to get from Streamlit secrets
@@ -49,7 +48,7 @@ def get_openai_api_key():
         return None
         
     return api_key
-    """
+    
 openai_api_key = get_openai_api_key()
 
 DB_DOCS_LIMIT = 100
