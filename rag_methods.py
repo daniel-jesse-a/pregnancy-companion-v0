@@ -1,3 +1,5 @@
+#rag_methods.py
+
 import streamlit as st
 import os
 import dotenv
@@ -98,7 +100,7 @@ def load_documents_from_directory(directory_path=DOCS_DIRECTORY):
     return documents
 
 # --- Document Processing Functions ---
-def split_documents(documents, chunk_size=1000, chunk_overlap=200):
+def split_documents(documents, chunk_size=10000, chunk_overlap=8000):
     """Split documents into chunks for processing"""
     if not documents:
         return []
