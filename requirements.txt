@@ -7,3 +7,5 @@ langchain-openai
 streamlit
 chromadb
 openai
+anthropic
+protobuf<=3.20.3
