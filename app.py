@@ -18,7 +18,10 @@ import rag_methods
 
 
 MODELS = [
-    "openai/gpt-4o",
+    "openai/gpt-4.1-mini",  # Default to mini for cost efficiency
+    "openai/gpt-4.1-nano",  # Even more cost efficient
+    "openai/gpt-4.1",       # Full capability model
+    "openai/gpt-4o",        # Keep previous models as options
     "openai/gpt-4o-mini",
 ]
 
